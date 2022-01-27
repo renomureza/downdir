@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter antialiased;
+  }
+
+  [type="radio"]:checked {
+    @apply bg-[url('/svg/checkbox-radio.svg')] bg-current border-transparent bg-center bg-no-repeat;
+    background-size: 100% 100%;
+  }
+}
