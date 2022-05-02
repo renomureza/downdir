@@ -3,11 +3,9 @@ const Input = ({ label, name, ...rest }) => {
     <div>
       <label htmlFor={name} className="block text-sm font-medium text-gray-700">
         {label}{" "}
-        {rest.required && (
-          <span aria-hidden="true" className="text-red-500">
-            *
-          </span>
-        )}
+        {!rest.required && 
+          "(Optional)"
+        }
       </label>
       <input
         id={name}
